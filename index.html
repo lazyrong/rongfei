@@ -8,7 +8,8 @@
     <meta name="author" content="rongfeichuanmei">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
       <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
       <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
@@ -18,49 +19,69 @@
       <![endif]-->
 
   </head>
-<body>
+<body style="padding-top:70px;">
   <!-- header  -->
-<nav class="navbar navbar-default" role="navigation">
-   <div class="navbar-header">
-      <a class="navbar-brand" href="#">W3Cschool</a>
-   </div>
-   <div>
-      <ul class="nav navbar-nav">
-         <li class="active"><a href="#">iOS</a></li>
-         <li><a href="#">SVN</a></li>
-         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-               Java 
-               <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-               <li><a href="#">jmeter</a></li>
-               <li><a href="#">EJB</a></li>
-               <li><a href="#">Jasper Report</a></li>
-               <li class="divider"></li>
-               <li><a href="#">分离的链接</a></li>
-               <li class="divider"></li>
-               <li><a href="#">另一个分离的链接</a></li>
-            </ul>
-         </li>
-      </ul>
-   </div>
-</nav>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">荣飞媒体资料库</a>
+      </div>
 
-<div class="row">
-  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-      <ul class="nav nav-tabs">
-        <li><a href="">媒体报价</a></li>
-        <li><a href="">微信推广</a></li>
-        <li><a href="">微博推广</a></li>
-        <li><a href="">淘宝新手流量套餐</a></li>
-      </ul>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">首页</a></li>
+          <li class="active"><a href="#">新闻软文</a></li>
+          <li><a href="#">微博</a></li>
+          <li><a href="#">微信</a></li>
+          <li><a href="#">淘宝刷流量</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="查找媒体">
+          </div>
+          <button type="submit" class="btn btn-default">查找</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#">淘宝下单</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+  <!-- 主内容区 -->
+  <div id="iframe-body">
+  <iframe id="ifame0" src="xwrw.html" name="iframe0" width="100%" height="100%"  frameborder="0"  seamless></iframe>
   </div>
-</div>
+
 
 
     <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+      $('#iframe-body').height($(window).height());
+      console.log($(window).height());
+      $(window).resize(function() {
+        $('#iframe-body').height($(window).height());
+      });
+    })
+    </script>
 </body>
 </html>
