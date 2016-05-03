@@ -6,8 +6,6 @@ body {
 }
 #iframe-body {
     overflow: hidden;
-    left: 16.666%;
-    padding-bottom: 50px;
 }
 .right-contianer {
 	position: absolute;
@@ -16,10 +14,16 @@ body {
     right: 0px;
     bottom: 0px;
 }
-
+div.filter-box a {
+    text-decoration: none;
+}
+div.filter-box a:hover {
+    color:red;
+}
 div.media-tags {
 
 }
+
 .media-content {
 
 }
@@ -41,4 +45,22 @@ div.media-tags .tags-box a {
     -moz-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;
+}
+div.media-tags .tags-box a:hover {
+    background-color: red;
+}
+
+.footer{
+    height: 60px;
+    width: 100%;
+    background-color: #2D3237;
+    text-align: center;
+}
+.footer p a {
+    text-decoration: none;
+    color:#909090;
+}
+.footer p {
+    line-height: 60px;
+    color:#909090;
 }

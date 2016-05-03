@@ -36,7 +36,7 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav" style="margin-left:50px;">
           <li><a href="#">首页</a></li>
           <li class="active"><a href="#">新闻软文</a></li>
           <li><a href="#">微博</a></li>
@@ -59,14 +59,90 @@
               <li><a href="#">Separated link</a></li>
             </ul>
           </li> -->
-          <li><a href="#">淘宝下单</a></li>
+          <li><a href="#">淘宝店铺</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
   </nav>
   <!-- 主内容区 -->
-  <div id="iframe-body">
-  <iframe id="ifame0" src="xwrw.html" name="iframe0" width="100%" height="100%"  frameborder="0"  seamless></iframe>
+  <div class="row-fluid clearfix">
+    <div class="col-md-4 col-lg-3" id="left-menu">
+    <div class="media-tags">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          媒体类型
+        </div>
+          <div class="panel-body tags-box">
+            <a href="">IT科技</a>
+            <a href="">游戏动漫</a>
+            <a href="">财经</a>
+            <a href="">商业资讯</a>
+            <a href="">综合</a>
+            <a href="">新闻资讯</a>
+            <a href="">珠宝首饰奢侈品</a>
+            <a href="">IT科技</a>
+            <a href="">游戏动漫</a>
+            <a href="">财经</a>
+            <a href="">商业资讯</a>
+            <a href="">综合</a>
+            <a href="">新闻资讯</a>
+            <a href="">珠宝首饰奢侈品</a>
+            <a href="">IT科技</a>
+            <a href="">游戏动漫</a>
+            <a href="">财经</a>
+            <a href="">商业资讯</a>
+            <a href="">综合</a>
+            <a href="">新闻资讯</a>
+            <a href="">珠宝首饰奢侈品</a>
+            <a href="">IT科技</a>
+            <a href="">游戏动漫</a>
+            <a href="">财经</a>
+            <a href="">商业资讯</a>
+            <a href="">综合</a>
+            <a href="">新闻资讯</a>
+            <a href="">珠宝首饰奢侈品</a>
+            <a href="">IT科技</a>
+            <a href="">游戏动漫</a>
+            <a href="">财经</a>
+            <a href="">商业资讯</a>
+            <a href="">综合</a>
+            <a href="">新闻资讯</a>
+            <a href="">珠宝首饰奢侈品</a>
+            <a href="">IT科技</a>
+            <a href="">游戏动漫</a>
+            <a href="">财经</a>
+            <a href="">商业资讯</a>
+            <a href="">综合</a>
+            <a href="">新闻资讯</a>
+            <a href="">珠宝首饰奢侈品</a>
+          </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          综合门户媒体
+        </div>
+        <div class="panel-body tags-box">
+          <a  href="xwrw.html" target="iframe0">IT科技</a>
+          <a  href="index.html" target="iframe0">游戏动漫</a>
+          <a  href="">财经</a>
+          <a  href="">商业资讯</a>
+          <a  href="">综合</a>
+          <a  href="">新闻资讯</a>
+          <a  href="">珠宝首饰奢侈品</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- right-iframe-content -->
+    <div class=" col-md-8 col-lg-9 media-content" id="iframe-body">
+      <iframe id="iframe0" src="xwrw.html" name="iframe0" width="100%" height="100%" scrolling="no" frameborder="0"  seamless></iframe>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="footer">
+  <p>
+          <strong>Copyright</strong> rongfei-media © 2016 <a href="http://www.miitbeian.gov.cn/" target="_blank">赣ICP备16003949号</a>
+  </p>
   </div>
 
 
@@ -76,11 +152,13 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
     $(function(){
-      $('#iframe-body').height($(window).height());
-      console.log($(window).height());
-      $(window).resize(function() {
-        $('#iframe-body').height($(window).height());
+      $("#iframe0").load(function(){
+          iframeH = $("#iframe0").contents().find("body").height()+30;
+          $("#iframe-body").height(iframeH);
+          console.log(iframeH);
       });
+
+
     })
     </script>
 </body>
