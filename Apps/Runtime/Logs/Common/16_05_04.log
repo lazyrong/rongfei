@@ -1,0 +1,156 @@
+[ 2016-05-04T18:54:52+08:00 ] 127.0.0.1 /rongfei/xwrw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Xwrw
+
+[ 2016-05-04T18:55:14+08:00 ] 127.0.0.1 /rongfei/xwrw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Xwrw
+
+[ 2016-05-04T18:55:21+08:00 ] 127.0.0.1 /rongfei/xwrw.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Xwrw
+
+[ 2016-05-04T18:59:13+08:00 ] 127.0.0.1 /rongfei/index.php?s=/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:List
+
+[ 2016-05-04T18:59:15+08:00 ] 127.0.0.1 /rongfei/index.php?s=/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:List
+
+[ 2016-05-04T18:59:32+08:00 ] 127.0.0.1 /rongfei/index.php?s=/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:List
+
+[ 2016-05-04T19:01:03+08:00 ] 127.0.0.1 /rongfei/index.php?s=/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:List
+
+[ 2016-05-04T19:01:15+08:00 ] 127.0.0.1 /rongfei/index.php?s=/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:List
+
+[ 2016-05-04T19:01:35+08:00 ] 127.0.0.1 /rongfei/index.php?s=/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Index
+
+[ 2016-05-04T19:01:54+08:00 ] 127.0.0.1 /rongfei/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:List
+
+[ 2016-05-04T19:07:22+08:00 ] 127.0.0.1 /rongfei/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:List
+
+[ 2016-05-04T19:08:17+08:00 ] 127.0.0.1 /rongfei/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:List
+
+[ 2016-05-04T19:08:20+08:00 ] 127.0.0.1 /rongfei/index.php?s=/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:List
+
+[ 2016-05-04T19:08:33+08:00 ] 127.0.0.1 /rongfei/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Css
+
+[ 2016-05-04T19:08:33+08:00 ] 127.0.0.1 /rongfei/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Css
+
+[ 2016-05-04T19:08:33+08:00 ] 127.0.0.1 /rongfei/css/animate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Css
+
+[ 2016-05-04T19:08:33+08:00 ] 127.0.0.1 /rongfei/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2016-05-04T19:08:33+08:00 ] 127.0.0.1 /rongfei/js/jquery-1.9.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Js
+
+[ 2016-05-04T19:08:33+08:00 ] 127.0.0.1 /rongfei/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2016-05-04T19:09:02+08:00 ] 127.0.0.1 /rongfei/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Css
+
+[ 2016-05-04T19:09:02+08:00 ] 127.0.0.1 /rongfei/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Css
+
+[ 2016-05-04T19:09:02+08:00 ] 127.0.0.1 /rongfei/js/jquery-1.9.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2016-05-04T19:09:02+08:00 ] 127.0.0.1 /rongfei/css/animate.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Css
+
+[ 2016-05-04T19:09:02+08:00 ] 127.0.0.1 /rongfei/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Js
+
+[ 2016-05-04T19:09:02+08:00 ] 127.0.0.1 /rongfei/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2016-05-04T19:11:53+08:00 ] 127.0.0.1 /rongfei/Apps/Home//Public/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Apps
+
