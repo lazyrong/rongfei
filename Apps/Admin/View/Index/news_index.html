@@ -33,8 +33,8 @@
           媒体类型
         </div>
           <div class="panel-body tags-box">
-            <a href="">IT科技</a>
-            <a href="">游戏动漫</a>
+            <a href="<{:U('Admin/News/index')}>" target="iframe0">不限</a>
+            <a href="<{:U('Admin/News/index?catid=1')}>" target="iframe0">游戏动漫</a>
             <a href="">财经</a>
             <a href="">商业资讯</a>
             <a href="">综合</a>
@@ -95,7 +95,7 @@
     </div>
     <!-- right-iframe-content -->
     <div class=" col-md-8 col-lg-9 media-content" id="iframe-body">
-      <iframe id="iframe0" src="<{:U('Home/News/index')}>" name="iframe0" width="100%" height="100%" scrolling="no" frameborder="0"  seamless></iframe>
+      <iframe id="iframe0" src="<{:U('Admin/News/index')}>" name="iframe0" width="100%" height="100%" scrolling="no" frameborder="0"  seamless></iframe>
     </div>
   </div>
   <!-- footer -->
@@ -110,6 +110,7 @@
     $(function(){
       $("#iframe0").load(function(){
           iframeH = $("#iframe0").contents().find("body").height()+30;
+          iframeH = $(window).height() > iframeH? $(window).height():iframeH;
           $("#iframe-body").height(iframeH);
           console.log(iframeH);
       });
