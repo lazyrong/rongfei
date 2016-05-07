@@ -23,7 +23,7 @@ return array(
 		    '__IMAGES__'	=>	__ROOT__.'/Public/img',
 
 	   	),
-	'SHOW_PAGE_TRACE' =>true,
+	'SHOW_PAGE_TRACE' =>false,  //debug trace
 	
 	//数据库配置信息
 	'DB_TYPE'   => 'mysql', // 数据库类型
@@ -36,7 +36,10 @@ return array(
 	'DB_CHARSET'=> 'utf8', // 字符集
 
 	// 系统默认的变量过滤机制
-	'DEFAULT_FILTER'        => 'htmlspecialchars'
+	'DEFAULT_FILTER'        => 'htmlspecialchars',
 
-
+    // link_type 
+    'link_type_text'	=>	array('无','只可以带文本网址','可以加入超链接','不可以添加任何链接'),
+    // sl_type
+    'sl_type_text'	=>	array('无','网页','新闻源','不确定')
 );

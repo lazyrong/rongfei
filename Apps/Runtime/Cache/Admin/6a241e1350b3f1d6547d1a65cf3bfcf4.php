@@ -41,7 +41,7 @@
          <div class="panel-body">
               <strong>操作：</strong>
               <a class="btn btn-primary" href="javascript:void(0);" id="add">新增</a>        
-              <a class="btn btn-danger" href="javascript:void(0);" id="edit">删除</a>
+              <a class="btn btn-danger" href="javascript:void(0);" id="delAll">批量删除</a>
         </div>
       </div>
 
@@ -62,6 +62,7 @@
                 <th>收录 [只供参考]</th>
                 <th>备注</th>
                 <th>下单</th>
+                <th>更新时间</th>
                 <th>操作</th>
               </tr>
             </thead>
@@ -75,6 +76,7 @@
                 <td><?php echo ($nl["sl_type"]); ?></td>
                 <td><?php echo ($nl["remark"]); ?></td>
                 <td><a href="<?php echo ($nl["buy_link"]); ?>">下单</a></td>
+                <td><?php echo ($nl["pubtime"]); ?></td>
                 <td><a href="<?php echo U('Admin/News/editNews',array('news_id'=>$nl[news_id]));?>" title="编辑"><span class="glyphicon glyphicon-edit"></span></a>&nbsp;&nbsp;<a href="<?php echo U('Admin/News/del',array('news_id'=>$nl[news_id]));?>" title="删除"><span class="glyphicon glyphicon-trash"></span></a></td>
               </tr><?php endforeach; endif; ?>
             </tbody>
@@ -86,7 +88,7 @@
             共&nbsp;<span>100</span>&nbsp;条
         </p>
       <div class="pull-right">
-        <ul class="pagination">
+<!--         <ul class="pagination">
           <li><a href="#">&laquo;</a></li>
           <li><a href="#">1</a></li>
           <li><a href="#">2</a></li>
@@ -94,7 +96,8 @@
           <li><a href="#">4</a></li>
           <li><a href="#">5</a></li>
           <li><a href="#">&raquo;</a></li>
-        </ul>
+        </ul> -->
+        <?php echo ($page); ?>
       </div>
       </div>
 </div>
@@ -119,7 +122,7 @@
             skin: 'yourclass',
             area: ['80%','60%'],
             offset: '100px',
-            content: "<?php echo U('Admin/News/addNews');?>"
+            content: "<?php echo U('Admin/News/addNews',array('cat_id'=>$cat_id));?>"
           });
       });
     })
