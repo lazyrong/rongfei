@@ -109,7 +109,7 @@
             //新增成功,刷新父页面，关闭当前页
             if(parseInt(st) == 1) {
               // parent.location.reload();
-              location.reload();
+              parent.location.reload();
             }
           });
          });

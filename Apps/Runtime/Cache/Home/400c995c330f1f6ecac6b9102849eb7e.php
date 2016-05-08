@@ -32,17 +32,16 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">荣飞媒体资料库</a>
+        <a class="navbar-brand" href="<?php echo U('Admin/Index/index');?>">荣飞媒体资料库</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav" style="margin-left:50px;">
-          <li><a href="#">首页</a></li>
-          <li class="active"><a href="#">新闻软文</a></li>
-          <li><a href="#">微博</a></li>
-          <li><a href="#">微信</a></li>
-          <li><a href="#">淘宝刷流量</a></li>
+          <li><a href="<?php echo U('Home/Index/index');?>">首页</a></li>
+        
+        <?php if(is_array($lel1)): foreach($lel1 as $key=>$lel): ?><li <?php if($lel['cat_id'] == $cat_id): ?>class="active"<?php endif; ?>><a href="<?php echo U('Home/Index/index',array('cat_id'=>$lel['cat_id']));?>"><?php echo ($lel["name"]); ?></a></li><?php endforeach; endif; ?>
+        
         </ul>
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
@@ -72,74 +71,26 @@
   <div class="row-fluid clearfix">
     <div class="col-md-4 col-lg-3" id="left-menu">
     <div class="media-tags">
-      <div class="panel panel-default">
+    <!-- 分类box -->
+    <?php if(is_array($catsList)): foreach($catsList as $key=>$cats): ?><div class="panel panel-default">
         <div class="panel-heading">
-          媒体类型
+          <span class="tag-link"> <?php echo ($cats['name']); ?></span>
         </div>
-          <div class="panel-body tags-box">
-            <a href="">IT科技</a>
-            <a href="">游戏动漫</a>
-            <a href="">财经</a>
-            <a href="">商业资讯</a>
-            <a href="">综合</a>
-            <a href="">新闻资讯</a>
-            <a href="">珠宝首饰奢侈品</a>
-            <a href="">IT科技</a>
-            <a href="">游戏动漫</a>
-            <a href="">财经</a>
-            <a href="">商业资讯</a>
-            <a href="">综合</a>
-            <a href="">新闻资讯</a>
-            <a href="">珠宝首饰奢侈品</a>
-            <a href="">IT科技</a>
-            <a href="">游戏动漫</a>
-            <a href="">财经</a>
-            <a href="">商业资讯</a>
-            <a href="">综合</a>
-            <a href="">新闻资讯</a>
-            <a href="">珠宝首饰奢侈品</a>
-            <a href="">IT科技</a>
-            <a href="">游戏动漫</a>
-            <a href="">财经</a>
-            <a href="">商业资讯</a>
-            <a href="">综合</a>
-            <a href="">新闻资讯</a>
-            <a href="">珠宝首饰奢侈品</a>
-            <a href="">IT科技</a>
-            <a href="">游戏动漫</a>
-            <a href="">财经</a>
-            <a href="">商业资讯</a>
-            <a href="">综合</a>
-            <a href="">新闻资讯</a>
-            <a href="">珠宝首饰奢侈品</a>
-            <a href="">IT科技</a>
-            <a href="">游戏动漫</a>
-            <a href="">财经</a>
-            <a href="">商业资讯</a>
-            <a href="">综合</a>
-            <a href="">新闻资讯</a>
-            <a href="">珠宝首饰奢侈品</a>
-          </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          综合门户媒体
-        </div>
+
         <div class="panel-body tags-box">
-          <a  href="news.html" target="iframe0">IT科技</a>
-          <a  href="index.html" target="iframe0">游戏动漫</a>
-          <a  href="">财经</a>
-          <a  href="">商业资讯</a>
-          <a  href="">综合</a>
-          <a  href="">新闻资讯</a>
-          <a  href="">珠宝首饰奢侈品</a>
+          <a  href="<?php echo U('Home/List/index',array('cat_id'=>$cats['cat_id'],'type' => $type));?>" target="iframe0">不限</a>
+        <?php if(is_array($cats['children'])): foreach($cats['children'] as $key=>$cat): ?><a  href="<?php echo U('Home/List/index',array('cat_id'=>$cat['cat_id'],'type' => $type));?>" target="iframe0" >
+          <?php echo ($cat['name']); ?>
+          </a><?php endforeach; endif; ?>
         </div>
-      </div>
+      </div><?php endforeach; endif; ?>
+   <!-- 分类box end -->
+
       </div>
     </div>
     <!-- right-iframe-content -->
     <div class=" col-md-8 col-lg-9 media-content" id="iframe-body">
-      <iframe id="iframe0" src="<?php echo U('Home/News/index');?>" name="iframe0" width="100%" height="100%" scrolling="no" frameborder="0"  seamless></iframe>
+      <iframe id="iframe0" src="<?php echo U('Home/List/index',array('type' => $type));?>" name="iframe0" width="100%" height="100%" scrolling="no" frameborder="0"  seamless></iframe>
     </div>
   </div>
   <!-- footer -->
@@ -156,15 +107,13 @@
     <script src="/rongfei/Public/js/jquery-1.9.1.min.js"></script>
     <script src="/rongfei/Public/js/bootstrap.min.js"></script>
     <script>
-    $(function(){
-      $("#iframe0").load(function(){
-          iframeH = $("#iframe0").contents().find("body").height()+30;
-          $("#iframe-body").height(iframeH);
-          console.log(iframeH);
-      });
-
-
-    })
+       $(function(){
+          $("#iframe0").load(function(){
+              iframeH = $("#iframe0").contents().find("body").height()+30;
+              iframeH = $(window).height() > iframeH? $(window).height():iframeH;
+              $("#iframe-body").height(iframeH);
+            });
+          })
     </script>
 </body>
 </html>

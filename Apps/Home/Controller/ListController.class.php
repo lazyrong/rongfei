@@ -1,5 +1,5 @@
 <?php
-namespace Admin\Controller;
+namespace Home\Controller;
 use Think\Controller;
 
 class ListController extends CommonController {
@@ -18,7 +18,7 @@ class ListController extends CommonController {
 		$type = I('type');
 		$order = 'pubtime';
 		$sort = 'desc';
-		$numPerPage = 1;
+		$numPerPage = 15;
 		$p = I('p',1);		
 		$model = null;
         switch ($type) {
@@ -43,17 +43,16 @@ class ListController extends CommonController {
 			$resultList = $model->relation(true)->page($p.','.$numPerPage)->order($order.' '.$sort)->select();
 			$count      = $model->count();// 查询满足要求的总记录数
 			$Page       = new \Think\Page($count,$numPerPage);// 实例化分页类 传入总记录数和每页显示的记录数
-
-			$show       = $Page->show();// 分页显示输出
+			$show = $Page->show();// 分页显示输出
+			
 		} else {
 			// 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
 			$resultList = $model->relation(true)->where($condition)->page($p.','.$numPerPage)->order($order.' '.$sort)->select();
 			$count      = $model->where($condition)->count();// 查询满足要求的总记录数
 			$Page       = new \Think\Page($count,$numPerPage);// 实例化分页类 传入总记录数和每页显示的记录数
-
 			$show       = $Page->show();// 分页显示输出
 		}
-	
+
 		//模板赋值
 		$this->assign('cat_id',$cat_id);  //所属分类
 		$this->assign('page',$show);// 赋值分页输出

@@ -35,15 +35,7 @@
                 <a href="">200以上</a>
             </div>
         </div>
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <strong>操作：</strong> <a class="btn btn-primary" href="javascript:void(0);" id="add">新增</a> <a class="btn btn-danger" href="javascript:void(0);" id="delAll">批量删除</a>
-                <div class="pull-right clearfix">
-                    <a class="btn btn-default" href="javascript:void(0);" id="download" title="表格下载"><span class="glyphicon glyphicon-cloud-download"></span>表格下载</a>
-                    <a class="btn btn-default" href="javascript:void(0);" id="upload" title="表格上传"><span class="glyphicon glyphicon-cloud-upload"></span>表格上传</a>
-                </div>
-            </div>
-        </div>
+
         <ul class="nav nav-tabs">
             <li class="active"><a href="#">默认排序</a></li>
             <li><a href="#">超值套餐推荐</a></li>
@@ -52,9 +44,6 @@
             <table class="table table-bordered table-hover text-center vertical-middle-lg">
                 <thead>
                     <tr style="background-color: #f5f5f5;">
-                        <th>全选
-                            <input type="checkbox" id="checkAll">
-                        </th>
                         <th>媒体频道</th>
                         <th>分类</th>
                         <th>单价(元)</th>
@@ -62,16 +51,11 @@
                         <th>收录 [只供参考]</th>
                         <th>备注</th>
                         <th>下单</th>
-                        <th>更新时间</th>
-                        <th>操作</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php if(is_array($resultList)): foreach($resultList as $k=>$res): ?><tr>
-                            <td>
-                                <input type="checkbox" name="ids[]" value="<?php echo ($res["news_id"]); ?>">
-                                <?php echo ($res["news_id"]); ?>
-                            </td>
+
                             <td>
                                 <a href="<?php echo ($res["news_url"]); ?>">
                                     <?php echo ($res["name"]); ?>
@@ -90,27 +74,13 @@
                                 <?php echo ($res["remark"]); ?>
                             </td>
                             <td><a href="<?php echo ($res["buy_link"]); ?>">下单</a></td>
-                            <td>
-                                <?php echo ($res["pubtime"]); ?>
-                            </td>
-                            <td><a href="<?php echo U('Admin/News/editNews',array('news_id'=>$res[news_id],'cat_id'=>$cat_id));?>" title="编辑"><span class="glyphicon glyphicon-edit"></span></a>&nbsp;&nbsp;<a href="<?php echo U('Admin/News/del',array('news_id'=>$res[news_id]));?>" title="删除"><span class="glyphicon glyphicon-trash"></span></a></td>
                         </tr><?php endforeach; endif; ?>
                 </tbody>
             </table>
         </div>
         <div class="row-fluid clearfix">
             <div class="pull-right">
-<!--             <ul class="pagination">
-          <li><a href="#">&laquo;</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">&raquo;</a></li>
-        </ul>  -->
                 <?php echo ($page); ?>
-
             </div>
         </div>
     </div>
@@ -118,71 +88,6 @@
     <script src="/rongfei/Public/js/jquery-1.9.1.min.js"></script>
     <script src="/rongfei/Public/layer/layer.js"></script>
     <script src="/rongfei/Public/js/bootstrap.min.js"></script>
-    <script>
-    var flag = 1;
-    $(function() {
-        $('#add').on('click', function() {
-            layer.open({
-                type: 2,
-                title: '新增',
-                closeBtn: 1,
-                shadeClose: true,
-                skin: 'yourclass',
-                area: ['80%', '60%'],
-                offset: '100px',
-                content: "<?php echo U('Admin/News/addNews',array('cat_id'=>$cat_id));?>"
-            });
-        });
-
-        $('#delAll').on('click', function() {
-            //询问框
-            //获取checkedbox value
-            var arrChk = $("input[name='ids[]']:checked");
-
-            if (arrChk.length == 0) {
-                return false;
-            }
-
-            var arr = new Array(); //id数组  
-            for (var i = 0; i < arrChk.length; i++) {
-                arr[i] = arrChk[i].value;
-            }
-
-            var index = layer.confirm('删除全部所选内容？', {
-                btn: ['删除', '取消'] //按钮
-            }, function() {
-                $.post('<?php echo U('
-                    Admin / News / delAll ');?>', {
-                        'ids': arr
-                    },
-                    function(st) {
-                        layer.close(index);
-                        if (st) {
-                            layer.msg('删除成功!');
-                            location.reload();
-                        } else {
-                            layer.msg('删除失败!');
-                        }
-
-                    });
-            });
-        });
-        $("#checkAll").on('change', function() {
-            var arrChk = $("input[name='ids[]']");
-            if (flag) {
-                for (var i = 0; i < arrChk.length; i++) {
-                    arrChk.eq(i).prop("checked", true);
-                }
-                flag = 0;
-            } else {
-                for (var i = 0; i < arrChk.length; i++) {
-                    arrChk.eq(i).removeAttr("checked");
-                }
-                flag = 1;
-            }
-        });
-    })
-    </script>
 </body>
 
 </html>

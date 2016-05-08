@@ -27,28 +27,52 @@
   <!-- 主内容区 -->
   <div class="row-fluid clearfix">
     <div class="col-md-4 col-lg-3" id="left-menu">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <form  role="form" class="form-inline" action="<{:U('Admin/Category/add')}>" method="post">
+         <input type="hidden" name="type" value="<{$type}>" >
+         <input type="hidden" name="pid" value="<{$cat_id}>" >
+         <input type="hidden" name="sort" value="100" >
+         <div class="form-group">
+              <input type="text" class="form-control" placeholder="请输入栏目名称" name="name" >
+         </div>
+         <button class="addCatTo" class="btn btn-default" type="submit">添加栏目</button>
+       </form>
+      </div>
+    </div>
     <div class="media-tags">
-    
     <!-- 分类box -->
     <foreach name="catsList" item="cats">
       <div class="panel panel-default">
         <div class="panel-heading">
-         	<{$cats['name']}>
+         	<span class="tag-link"> <{$cats['name']}></span>
+          <input class="hide" type="text" id="name"  name="name"  value="<{$cats['name']}>">
+          <a href="javascript:;" onclick="edit(this,<{$cats['cat_id']}>)"><span class="glyphicon glyphicon-edit" title="编辑"></span></a>
+          <a href="<{:U('Admin/Category/del',array('cat_id'=>$cats['cat_id']))}>"><span class="glyphicon glyphicon-trash" title="删除"></span></a>
         </div>
         
-	  	<div class="input-group" style="background-color:#eee;padding:20px;border:inset 1px;">
-         <input type="text" class="form-control" placeholder="请输入分类名称" >
-		 <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">添加分类
-                  </button>
-               </span>
+	  	<div style="background-color:#eee;padding:10px 20px;border:inset 1px;">
+      <form  role="form" class="form-inline" action="<{:U('Admin/Category/add')}>" method="post">
+         <input type="hidden" name="type" value="<{$cats.type}>" >
+         <input type="hidden" name="pid" value="<{$cats.cat_id}>" >
+         <input type="hidden" name="sort" value="1" >
+         <div class="form-group">
+              <input type="text" class="form-control" placeholder="请输入分类名称" name="name" >
+         </div>
+         <button class="addCatTo" class="btn btn-default" type="submit">添加分类</button>
+      </form>
       </div>
-        <div class="panel-body tags-box">
-          <a href="<{:U('Admin/List/index',array('cat_id'=>$cats['cat_id'],'type' => $type))}>" target="iframe0">不限</a>
+        <div class="panel-body tags-box-admin">
+          <a class="tag-link" href="<{:U('Admin/List/index',array('cat_id'=>$cats['cat_id'],'type' => $type))}>" target="iframe0">不限</a>
         <foreach name="cats['children']" item="cat">
-          <a href="<{:U('Admin/List/index',array('cat_id'=>$cat['cat_id'],'type' => $type))}>" target="iframe0" class="clearfix">
+          <div class='tags-div'>
+          <a class="tag-link"  href="<{:U('Admin/List/index',array('cat_id'=>$cat['cat_id'],'type' => $type))}>" target="iframe0" >
           <{$cat['name']}>
           </a>
+           <input class="hide" type="text" id="name"  name="name"  value="<{$cat['name']}>">
+          <a class="icon-link" href="javascript:;" onclick="edit(this,<{$cat['cat_id']}>)"><span class="glyphicon glyphicon-edit" title="编辑"></span></a>
+          <a class="icon-link" href="<{:U('Admin/Category/del',array('cat_id'=>$cat['cat_id']))}>"><span class="glyphicon glyphicon-trash" title="删除"></span></a>
+          </div>
        </foreach>
         </div>
       </div>
@@ -77,11 +101,27 @@
           iframeH = $(window).height() > iframeH? $(window).height():iframeH;
           $("#iframe-body").height(iframeH);
           console.log(iframeH);
-      });
-		//增加分类      
-      $(".addCatTo").on('click',function(){
-      });
-    })
+        });
+      })
+      function edit(obj,id) {
+        $obj = $(obj);
+        $ipt = $obj.siblings('input');
+        $a = $obj.siblings('.tag-link');
+        if($ipt.hasClass('hide')){
+          $a.addClass('hide');
+          $ipt.removeClass('hide');
+          $ipt.focus();
+        } else {          
+          $.post("<{:U('Admin/Category/update')}>",{'name':$ipt.val(),'cat_id':id},
+            function(st){
+              $a.text($ipt.val());
+              $a.removeClass('hide');
+              $ipt.addClass('hide');
+            }
+          );
+        }
+      }
+    //ajax修改分类名称
     </script>
 </body>
 </html>
