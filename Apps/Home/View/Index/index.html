@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>荣飞传媒资料库</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="荣飞传媒资料库">
+    <meta name="author" content="rongfeichuanmei">
+
+    <!-- Le styles -->
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <link href="__CSS__/style.css" rel="stylesheet">
+
+      <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+      <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+
+  </head>
+<body style="padding-top:70px;">
+  <!-- header -->
+    <include file="Public:header" />
+  <!-- header end -->
+
+  <!-- 主内容区 -->
+  <div class="row-fluid clearfix">
+    <div class="col-md-4 col-lg-3" id="left-menu">
+    <div class="media-tags">
+    <!-- 分类box -->
+    <foreach name="catsList" item="cats">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <span class="tag-link"> <{$cats['name']}></span>
+        </div>
+
+        <div class="panel-body tags-box">
+          <a  href="<{:U('Home/List/index',array('cat_id'=>$cats['cat_id'],'type' => $type))}>" target="iframe0">不限</a>
+        <foreach name="cats['children']" item="cat">
+          <a  href="<{:U('Home/List/index',array('cat_id'=>$cat['cat_id'],'type' => $type))}>" target="iframe0" >
+          <{$cat['name']}>
+          </a>
+       </foreach>
+        </div>
+      </div>
+    </foreach>
+   <!-- 分类box end -->
+
+      </div>
+    </div>
+    <!-- right-iframe-content -->
+    <div class=" col-md-8 col-lg-9 media-content" id="iframe-body">
+      <iframe id="iframe0" src="<{:U('Home/List/index',array('type' => $type))}>" name="iframe0" width="100%" height="100%" scrolling="no" frameborder="0"  seamless></iframe>
+    </div>
+  </div>
+  <!-- footer -->
+  <include file="Public:footer" />
+  <!-- footer end -->
+
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="__JS__/jquery-1.9.1.min.js"></script>
+    <script src="__JS__/bootstrap.min.js"></script>
+    <script>
+       $(function(){
+          $("#iframe0").load(function(){
+              iframeH = $("#iframe0").contents().find("body").height()+30;
+              iframeH = $(window).height() > iframeH? $(window).height():iframeH;
+              $("#iframe-body").height(iframeH);
+            });
+          })
+    </script>
+</body>
+</html>
