@@ -14,8 +14,9 @@ class ListController extends CommonController {
         } else {
             $condition['cat_id'] = $cat_id;
         }
-        
-		$type = I('type');
+        $type = M('Category')->where('cat_id ='.$cat_id)->getField('type');
+
+		$type = I('type',$type);
 		$order = 'pubtime';
 		$sort = 'desc';
 		$numPerPage = 1;

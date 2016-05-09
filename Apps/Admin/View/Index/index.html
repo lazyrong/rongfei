@@ -29,14 +29,14 @@
     <div class="col-md-4 col-lg-3" id="left-menu">
     <div class="panel panel-default">
       <div class="panel-body">
-        <form  role="form" class="form-inline" action="<{:U('Admin/Category/add')}>" method="post">
+        <form  role="form" class="form-inline">
          <input type="hidden" name="type" value="<{$type}>" >
          <input type="hidden" name="pid" value="<{$cat_id}>" >
          <input type="hidden" name="sort" value="100" >
          <div class="form-group">
               <input type="text" class="form-control" placeholder="请输入栏目名称" name="name" >
          </div>
-         <button class="addCatTo" class="btn btn-default" type="submit">添加栏目</button>
+         <a href="javascript:;" class="btn btn-primary addCatTo" >添加栏目</a>
        </form>
       </div>
     </div>
@@ -47,19 +47,20 @@
         <div class="panel-heading">
          	<span class="tag-link"> <{$cats['name']}></span>
           <input class="hide" type="text" id="name"  name="name"  value="<{$cats['name']}>">
+
           <a href="javascript:;" onclick="edit(this,<{$cats['cat_id']}>)"><span class="glyphicon glyphicon-edit" title="编辑"></span></a>
-          <a href="<{:U('Admin/Category/del',array('cat_id'=>$cats['cat_id']))}>"><span class="glyphicon glyphicon-trash" title="删除"></span></a>
+          <a href="javascript:;" onclick="del(this,<{$cats['cat_id']}>)"><span class="glyphicon glyphicon-trash" title="删除"></span></a>
         </div>
         
 	  	<div style="background-color:#eee;padding:10px 20px;border:inset 1px;">
-      <form  role="form" class="form-inline" action="<{:U('Admin/Category/add')}>" method="post">
+      <form  role="form" class="form-inline">
          <input type="hidden" name="type" value="<{$cats.type}>" >
          <input type="hidden" name="pid" value="<{$cats.cat_id}>" >
          <input type="hidden" name="sort" value="1" >
          <div class="form-group">
               <input type="text" class="form-control" placeholder="请输入分类名称" name="name" >
          </div>
-         <button class="addCatTo" class="btn btn-default" type="submit">添加分类</button>
+         <a href="javascript:;" class="btn btn-success addCatTo">添加分类</a> 
       </form>
       </div>
         <div class="panel-body tags-box-admin">
@@ -71,7 +72,7 @@
           </a>
            <input class="hide" type="text" id="name"  name="name"  value="<{$cat['name']}>">
           <a class="icon-link" href="javascript:;" onclick="edit(this,<{$cat['cat_id']}>)"><span class="glyphicon glyphicon-edit" title="编辑"></span></a>
-          <a class="icon-link" href="<{:U('Admin/Category/del',array('cat_id'=>$cat['cat_id']))}>"><span class="glyphicon glyphicon-trash" title="删除"></span></a>
+          <a class="icon-link" href="javascript:;" onclick="del(this,<{$cat['cat_id']}>)"><span class="glyphicon glyphicon-trash" title="删除"></span></a>
           </div>
        </foreach>
         </div>
@@ -83,7 +84,7 @@
     </div>
     <!-- right-iframe-content -->
     <div class=" col-md-8 col-lg-9 media-content" id="iframe-body">
-      <iframe id="iframe0" src="<{:U('Admin/List/index',array('type' => $type))}>" name="iframe0" width="100%" height="100%" scrolling="no" frameborder="0"  seamless></iframe>
+      <iframe id="iframe0" src="<{:U('Admin/List/index',array('cat_id' => $cat_id))}>" name="iframe0" width="100%" height="100%" scrolling="no" frameborder="0"  seamless></iframe>
     </div>
   </div>
   <!-- footer -->
@@ -102,7 +103,18 @@
           $("#iframe-body").height(iframeH);
           console.log(iframeH);
         });
+
+      $('.addCatTo').on('click',function(){
+          $form = $(this).parent('form');
+          $data = $form.serialize();
+          $.post("<{:U('Admin/Category/add')}>", $data, function(st) {
+            location.reload();
+          }
+            );
+      });
       })
+
+    //ajax修改分类名称
       function edit(obj,id) {
         $obj = $(obj);
         $ipt = $obj.siblings('input');
@@ -122,6 +134,20 @@
         }
       }
     //ajax修改分类名称
+          function del(obj,id) {
+            $obj = $(obj);
+            $pt = $obj.parent('.tags-div')? $obj.parent('.tags-div'):$obj.parent('li');
+
+            $.post("<{:U('Admin/Category/del')}>",{'cat_id':id},
+              function(st){
+                if(st) {
+                  $pt.remove();
+                }
+              }
+            );
+
+          }
+
     </script>
 </body>
 </html>

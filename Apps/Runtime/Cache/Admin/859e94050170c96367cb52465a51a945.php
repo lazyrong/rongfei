@@ -40,8 +40,14 @@
         <ul class="nav navbar-nav" style="margin-left:50px;">
           <li><a href="<?php echo U('Admin/Index/index');?>">首页</a></li>
         
-        <?php if(is_array($lel1)): foreach($lel1 as $key=>$lel): ?><li <?php if($lel['cat_id'] == $cat_id): ?>class="active"<?php endif; ?>><a href="<?php echo U('Admin/Index/index',array('cat_id'=>$lel['cat_id']));?>"><?php echo ($lel["name"]); ?></a></li><?php endforeach; endif; ?>
-        
+        <?php if(is_array($lel1)): foreach($lel1 as $key=>$lel): ?><li <?php if($lel['cat_id'] == $cat_id): ?>class="active"<?php endif; ?>>
+          <div class="tags-div header-tag">
+            <a class="tag-link" href="<?php echo U('Admin/Index/index',array('cat_id'=>$lel['cat_id']));?>"><?php echo ($lel["name"]); ?></a>   
+            <input class="hide" type="text" id="name"  name="name"  value="<?php echo ($lel["name"]); ?>">    
+            <a class="icon-link" href="javascript:;" onclick="edit(this,<?php echo ($lel['cat_id']); ?>)"><span class="glyphicon glyphicon-edit" title="编辑"></span></a>
+            <a class="icon-link" href="javascript:;" onclick="del(this,<?php echo ($lel['cat_id']); ?>)"><span class="glyphicon glyphicon-trash" title="删除"></span></a>  
+          </div>  
+          </li><?php endforeach; endif; ?>
         </ul>
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
@@ -49,6 +55,16 @@
           </div>
           <button type="submit" class="btn btn-default">查找</button>
         </form>
+
+        <form  role="form" class="navbar-form navbar-left form-inline">
+           <input type="hidden" name="pid" value="0" >
+           <div class="form-group">
+                <input type="text" class="form-control" placeholder="模型（1：新闻软文；2：微博 3微信 4淘宝）" name="type">
+                <input type="text" class="form-control" placeholder="请输入顶级分类名称" name="name" >
+           </div>
+           <a href="javascript:;" class="btn btn-success addCatTo">添加顶级分类</a> 
+        </form>
+
         <ul class="nav navbar-nav navbar-right">
           <!-- <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -74,14 +90,14 @@
     <div class="col-md-4 col-lg-3" id="left-menu">
     <div class="panel panel-default">
       <div class="panel-body">
-        <form  role="form" class="form-inline" action="<?php echo U('Admin/Category/add');?>" method="post">
+        <form  role="form" class="form-inline">
          <input type="hidden" name="type" value="<?php echo ($type); ?>" >
          <input type="hidden" name="pid" value="<?php echo ($cat_id); ?>" >
          <input type="hidden" name="sort" value="100" >
          <div class="form-group">
               <input type="text" class="form-control" placeholder="请输入栏目名称" name="name" >
          </div>
-         <button class="addCatTo" class="btn btn-default" type="submit">添加栏目</button>
+         <a href="javascript:;" class="btn btn-primary addCatTo" >添加栏目</a>
        </form>
       </div>
     </div>
@@ -91,19 +107,20 @@
         <div class="panel-heading">
          	<span class="tag-link"> <?php echo ($cats['name']); ?></span>
           <input class="hide" type="text" id="name"  name="name"  value="<?php echo ($cats['name']); ?>">
+
           <a href="javascript:;" onclick="edit(this,<?php echo ($cats['cat_id']); ?>)"><span class="glyphicon glyphicon-edit" title="编辑"></span></a>
-          <a href="<?php echo U('Admin/Category/del',array('cat_id'=>$cats['cat_id']));?>"><span class="glyphicon glyphicon-trash" title="删除"></span></a>
+          <a href="javascript:;" onclick="del(this,<?php echo ($cats['cat_id']); ?>)"><span class="glyphicon glyphicon-trash" title="删除"></span></a>
         </div>
         
 	  	<div style="background-color:#eee;padding:10px 20px;border:inset 1px;">
-      <form  role="form" class="form-inline" action="<?php echo U('Admin/Category/add');?>" method="post">
+      <form  role="form" class="form-inline">
          <input type="hidden" name="type" value="<?php echo ($cats["type"]); ?>" >
          <input type="hidden" name="pid" value="<?php echo ($cats["cat_id"]); ?>" >
          <input type="hidden" name="sort" value="1" >
          <div class="form-group">
               <input type="text" class="form-control" placeholder="请输入分类名称" name="name" >
          </div>
-         <button class="addCatTo" class="btn btn-default" type="submit">添加分类</button>
+         <a href="javascript:;" class="btn btn-success addCatTo">添加分类</a> 
       </form>
       </div>
         <div class="panel-body tags-box-admin">
@@ -114,7 +131,7 @@
           </a>
            <input class="hide" type="text" id="name"  name="name"  value="<?php echo ($cat['name']); ?>">
           <a class="icon-link" href="javascript:;" onclick="edit(this,<?php echo ($cat['cat_id']); ?>)"><span class="glyphicon glyphicon-edit" title="编辑"></span></a>
-          <a class="icon-link" href="<?php echo U('Admin/Category/del',array('cat_id'=>$cat['cat_id']));?>"><span class="glyphicon glyphicon-trash" title="删除"></span></a>
+          <a class="icon-link" href="javascript:;" onclick="del(this,<?php echo ($cat['cat_id']); ?>)"><span class="glyphicon glyphicon-trash" title="删除"></span></a>
           </div><?php endforeach; endif; ?>
         </div>
       </div><?php endforeach; endif; ?>
@@ -124,7 +141,7 @@
     </div>
     <!-- right-iframe-content -->
     <div class=" col-md-8 col-lg-9 media-content" id="iframe-body">
-      <iframe id="iframe0" src="<?php echo U('Admin/List/index',array('type' => $type));?>" name="iframe0" width="100%" height="100%" scrolling="no" frameborder="0"  seamless></iframe>
+      <iframe id="iframe0" src="<?php echo U('Admin/List/index',array('cat_id' => $cat_id));?>" name="iframe0" width="100%" height="100%" scrolling="no" frameborder="0"  seamless></iframe>
     </div>
   </div>
   <!-- footer -->
@@ -148,7 +165,18 @@
           $("#iframe-body").height(iframeH);
           console.log(iframeH);
         });
+
+      $('.addCatTo').on('click',function(){
+          $form = $(this).parent('form');
+          $data = $form.serialize();
+          $.post("<?php echo U('Admin/Category/add');?>", $data, function(st) {
+            location.reload();
+          }
+            );
+      });
       })
+
+    //ajax修改分类名称
       function edit(obj,id) {
         $obj = $(obj);
         $ipt = $obj.siblings('input');
@@ -168,6 +196,20 @@
         }
       }
     //ajax修改分类名称
+          function del(obj,id) {
+            $obj = $(obj);
+            $pt = $obj.parent('.tags-div')? $obj.parent('.tags-div'):$obj.parent('li');
+
+            $.post("<?php echo U('Admin/Category/del');?>",{'cat_id':id},
+              function(st){
+                if(st) {
+                  $pt.remove();
+                }
+              }
+            );
+
+          }
+
     </script>
 </body>
 </html>

@@ -18,9 +18,15 @@
           <li><a href="<{:U('Admin/Index/index')}>">首页</a></li>
         
         <foreach name="lel1" item="lel">	
-          <li <if condition="$lel['cat_id'] eq $cat_id">class="active"</if>><a href="<{:U('Admin/Index/index',array('cat_id'=>$lel['cat_id']))}>"><{$lel.name}></a></li>
+          <li <if condition="$lel['cat_id'] eq $cat_id">class="active"</if>>
+          <div class="tags-div header-tag">
+            <a class="tag-link" href="<{:U('Admin/Index/index',array('cat_id'=>$lel['cat_id']))}>"><{$lel.name}></a>   
+            <input class="hide" type="text" id="name"  name="name"  value="<{$lel.name}>">    
+            <a class="icon-link" href="javascript:;" onclick="edit(this,<{$lel['cat_id']}>)"><span class="glyphicon glyphicon-edit" title="编辑"></span></a>
+            <a class="icon-link" href="javascript:;" onclick="del(this,<{$lel['cat_id']}>)"><span class="glyphicon glyphicon-trash" title="删除"></span></a>  
+          </div>  
+          </li> 
         </foreach>
-        
         </ul>
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
@@ -28,6 +34,16 @@
           </div>
           <button type="submit" class="btn btn-default">查找</button>
         </form>
+
+        <form  role="form" class="navbar-form navbar-left form-inline">
+           <input type="hidden" name="pid" value="0" >
+           <div class="form-group">
+                <input type="text" class="form-control" placeholder="模型（1：新闻软文；2：微博 3微信 4淘宝）" name="type">
+                <input type="text" class="form-control" placeholder="请输入顶级分类名称" name="name" >
+           </div>
+           <a href="javascript:;" class="btn btn-success addCatTo">添加顶级分类</a> 
+        </form>
+
         <ul class="nav navbar-nav navbar-right">
           <!-- <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>

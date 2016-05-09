@@ -19,7 +19,10 @@ class LoginController extends Controller {
 			$this->error('用户名或密码错误！');
 		}
 	}	
-
+	public function logOut() {
+		session('[destroy]'); // 销毁session
+		$this->_empty();
+	}
 
 	//空操作
 	public function _empty(){

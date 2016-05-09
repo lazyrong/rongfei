@@ -14,9 +14,9 @@ class CategoryController extends CommonController {
 		    if($result){
 		        $insertId = $result;
 		    }
-		     $this->success('新增成功！');
+	       $this->ajaxreturn(1);
 		} else {
-	     $this->error('新增失败！');
+           $this->ajaxreturn(0);
 	   }
     }
 

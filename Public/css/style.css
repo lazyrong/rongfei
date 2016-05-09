@@ -89,11 +89,24 @@ div.media-tags .tags-box-admin a.tag-link {
 div.media-tags .tags-box-admin a.tag-link:hover {
     background-color: red;
 }
-div.media-tags .tags-box-admin a.icon-link {
+
+div.media-tags .tags-box-admin a.icon-link/*,.navbar-default .navbar-nav > li> a.icon-link */{
     display: inline-block;
 
 }
 
+
+div.header-tag {
+    position: relative;
+    color: #333;
+    line-height: 20px;
+    padding: 15px;
+    margin: 0;
+    background-color:#fff;
+}
+li.active > div.header-tag {
+    background-color:#eee;
+}
 .hide {
     display: none;
 }

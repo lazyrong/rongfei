@@ -11,6 +11,7 @@
     <link href="/rongfei/Public/css/bootstrap.min.css" rel="stylesheet">
     <link href="/rongfei/Public/css/style.css" rel="stylesheet">
     <link href="/rongfei/Public/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="/rongfei/Public/css/fileinput.min.css">
     <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
     <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
     <!--[if lt IE 9]>
@@ -39,8 +40,8 @@
             <div class="panel-body">
                 <strong>操作：</strong> <a class="btn btn-primary" href="javascript:void(0);" id="add">新增</a> <a class="btn btn-danger" href="javascript:void(0);" id="delAll">批量删除</a>
                 <div class="pull-right clearfix">
-                    <a class="btn btn-default" href="javascript:void(0);" id="download" title="表格下载"><span class="glyphicon glyphicon-cloud-download"></span>表格下载</a>
-                    <a class="btn btn-default" href="javascript:void(0);" id="upload" title="表格上传"><span class="glyphicon glyphicon-cloud-upload"></span>表格上传</a>
+                    <a class="btn btn-primary btn-file"><span class="glyphicon glyphicon-folder-open"></span>&nbsp; <span class="hidden-xs">上传..</span><input id="fileIpt" name="fileIpt"  type="file"></a>
+                    <a class="btn btn-default btn-file " id="download" title="表格下载"><span class="glyphicon glyphicon-cloud-download">&nbsp; </span><span class="hidden-xs">下载..</span></a>
                 </div>
             </div>
         </div>
@@ -118,9 +119,13 @@
     <script src="/rongfei/Public/js/jquery-1.9.1.min.js"></script>
     <script src="/rongfei/Public/layer/layer.js"></script>
     <script src="/rongfei/Public/js/bootstrap.min.js"></script>
+    <script src="fileinput.min.js"></script>
     <script>
+
+
     var flag = 1;
     $(function() {
+        function(){$("#fileIpt").fileinput();
         $('#add').on('click', function() {
             layer.open({
                 type: 2,

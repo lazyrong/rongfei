@@ -55,7 +55,7 @@
         </a>
         <form class="span4 box" action="<?php echo U('Admin/Login/checkLogin');?>" method="post">
                 <div class="content-wrap clearfix">
-                <h6>后台管理系统</h6>
+                <h6>荣飞后台管理系统</h6>
                 <input class="span12" type="text" placeholder="管理员账号" name="username" />
                 <input class="span12" type="password" placeholder="密码" name="password" />
                 <input class="span12 btn btn-success" type="submit" value="登录" />
