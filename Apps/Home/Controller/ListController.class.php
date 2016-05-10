@@ -38,7 +38,7 @@ class ListController extends CommonController {
                 $this->error('你在说什么，我听不懂！');
         }
         
-		if($cat_id == 1) {
+		if(islel1($cat_id)) {
 			// 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
 			$resultList = $model->relation(true)->page($p.','.$numPerPage)->order($order.' '.$sort)->select();
 			$count      = $model->count();// 查询满足要求的总记录数
