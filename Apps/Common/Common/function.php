@@ -20,6 +20,13 @@ function getChildrenId($cat_id) {
     return $arr;
 }
 
+
+//判断是顶级栏目
+function islel1($cat_id) {
+    $bl = M('Category')->where('cat_id ='.$cat_id)->getField('pid') == 0? true:false;
+    return $bl;
+}
+
 //link_type to text
 function link2text($type) {
     $arr = C('link_type_text');

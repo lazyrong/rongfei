@@ -44,6 +44,74 @@
                     <a class="btn btn-default btn-file " id="download" title="表格下载"><span class="glyphicon glyphicon-cloud-download">&nbsp; </span><span class="hidden-xs">下载..</span></a>
                 </div>
             </div>
+            <!-- add news -->
+            <div id="add-panel" style="margin:20px; margin-bottom:0px; display:none; border-top:1px solid #eee">
+            <form  class="form-horizontal row-fluid clearfix" role="form" id="form0">
+              <!-- 选择分类 -->
+                <div class="col-sm-3">
+                    <div class="form-group">
+                      <label for="cat_id"   class="control-label">所属分类</label>
+                      <select class="form-control" name="cat_id" id="cat_id">
+                      <?php if(is_array($cats)): foreach($cats as $key=>$cat): ?><option value="<?php echo ($cat["cat_id"]); ?>" <?php if($cat["cat_id"] == $cat_id): ?>selected<?php endif; ?>> <?php echo ($cat["name"]); ?> </option><?php endforeach; endif; ?>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="case_url"   class="control-label">案例链接</label>
+                        <input type="text"  class="form-control" id="case_url" name="case_url"  placeholder="案例链接"  >
+                    </div>
+                    <div class="form-group">
+                      <label for="sl_type"   class="control-label">收录说明</label>
+                      <select class="form-control" name="sl_type" id="sl_type">
+                        <option value="0"><?php echo C('sl_type_text.0');?></option>
+                        <option value="1"><?php echo C('sl_type_text.1');?></option>
+                        <option value="2"><?php echo C('sl_type_text.2');?></option>
+                        <option value="3"><?php echo C('sl_type_text.3');?></option>
+                      </select>
+                    </div>
+                </div>
+                <div class="col-sm-offset-1 col-sm-3">
+                    <div class="form-group">
+                        <label for="name"  class="control-label">媒体名称</label>
+                        <input type="text" class="form-control" id="name"  name="name" placeholder="媒体名称">
+                    </div>                
+
+                    <div class="form-group">
+                      <label for="price"   class="control-label">价格</label>
+
+                        <input type="text" class="form-control" id="price" name="price" placeholder="价格" >
+
+                    </div>
+                    <div class="form-group">
+                      <label for="buy_link"   class="control-label">淘宝链接</label>
+                      <input type="text" class="form-control" id="buy_link" name="buy_link" placeholder="淘宝链接" >
+                  </div>   
+                </div>    
+                <div class="col-sm-offset-1 col-sm-3">    
+                    <div class="form-group">
+                        <label for="news_url"   class="control-label">媒体链接</label>
+                        <input type="text"  class="form-control" id="news_url" name="news_url"  placeholder="媒体链接"  >
+                    </div>
+                    <div class="form-group">
+                      <label for="link_type"   class="control-label">链接说明</label>
+                      <select class="form-control" name="link_type" id="link_type">
+                        <option value="0"><?php echo C('link_type_text.0');?></option>
+                        <option value="1"><?php echo C('link_type_text.1');?></option>
+                        <option value="2"><?php echo C('link_type_text.2');?></option>
+                        <option value="3"><?php echo C('link_type_text.3');?></option>
+                      </select>
+                    </div> 
+                    <div class="form-group">
+                        <label for="remark"   class="control-label">备注</label>
+                        <textarea class="form-control" name="remark" id="remark"></textarea>        
+                  </div>
+                </div>
+            </form>
+            <div class="center-block"  style="width:200px; margin-bottom:20px;">
+                <button class="btn btn-primary" id="add0">提交</button>
+                <button class="btn btn-default" id="cancel0">取消</button>
+            </div>
+            </div>
+            <!-- add news end -->
         </div>
         <ul class="nav nav-tabs">
             <li class="active"><a href="#">默认排序</a></li>
@@ -124,18 +192,10 @@
 
     var flag = 1;
     $(function() {
-        $('#add').on('click', function() {
-            layer.open({
-                type: 2,
-                title: '新增',
-                closeBtn: 1,
-                shadeClose: true,
-                skin: 'yourclass',
-                area: ['80%', '60%'],
-                offset: '100px',
-                content: "<?php echo U('Admin/News/addNews',array('cat_id'=>$cat_id));?>"
-            });
+        $('#add,#cancel0').on('click', function() {
+            $('#add-panel').slideToggle();
         });
+
         $('#delAll').on('click', function() {
             //询问框
             //获取checkedbox value
@@ -153,10 +213,7 @@
             var index = layer.confirm('删除全部所选内容？', {
                 btn: ['删除', '取消'] //按钮
             }, function() {
-                $.post('<?php echo U('
-                    Admin / News / delAll ');?>', {
-                        'ids': arr
-                    },
+                $.post('<?php echo U('Admin/News/delAll');?>', {'ids': arr},
                     function(st) {
                         layer.close(index);
                         if (st) {
@@ -183,8 +240,26 @@
                 flag = 1;
             }
         });
+
+
+        //ajax添加内容
+        $('#add0').click(function(){
+          $formdata = $('#form0').serialize();
+          $.post("<?php echo U('Admin/News/add');?>", $formdata,
+          function(st){
+            if(parseInt(st) == 1) {
+                // layer.msg('新增成功!');
+                // //清空表单
+                // $(':input','#form0').not(':button, :submit, :reset, :hidden').val('').removeAttr('checked').removeAttr('selected');
+                location.reload();
+            } else {
+                layer.msg('新增失败!');
+            }
+          });
+
+      });
     })
-    </script>
+     </script>
 </body>
 
 </html>

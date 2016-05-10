@@ -12093,6 +12093,7 @@ ERR: 1054:Unknown column 'fileinput.min.js' in 'where clause'
 ERR: 1054:Unknown column 'fileinput.min.js' in 'where clause'
  [ SQL语句 ] : SELECT `type` FROM `lazy_category` WHERE ( cat_id =fileinput.min.js ) LIMIT 1  
 
+<<<<<<< HEAD
 [ 2016-05-09T22:11:11+08:00 ] ::1 /rongfei/admin
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -13439,3 +13440,5 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
+=======
+>>>>>>> b371002fdca0e945753c8b2e3236e8febaa2a142

@@ -1,0 +1,30 @@
+[ 2016-05-11T01:12:34+08:00 ] ::1 /rongfei/__%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Admin%20/%20News%20/%20delAll%20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__                    Admin
+
+[ 2016-05-11T01:12:37+08:00 ] ::1 /rongfei/__%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Admin%20/%20News%20/%20delAll%20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__                    Admin
+
+[ 2016-05-11T01:12:39+08:00 ] ::1 /rongfei/__%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Admin%20/%20News%20/%20delAll%20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__                    Admin
+
+[ 2016-05-11T01:12:39+08:00 ] ::1 /rongfei/__%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Admin%20/%20News%20/%20delAll%20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__                    Admin
+
+[ 2016-05-11T01:12:40+08:00 ] ::1 /rongfei/__%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Admin%20/%20News%20/%20delAll%20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:__                    Admin
+

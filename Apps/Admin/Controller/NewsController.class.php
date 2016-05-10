@@ -29,14 +29,6 @@ class NewsController extends CommonController{
 		$cat_id = I('cat_id');
 		$this->assign('cat_id',$cat_id);  //当前所属分类
         
-		
-		//获取可选分类
-        $condition['pid'] = array(in,getChildrenId(1));
-
-		//下拉分类
-		$cats = M('Category')->where($condition)->select();
-		$this->assign('cats',$cats);
-		
 		$this->display('addNews');		
 	}
 
