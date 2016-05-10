@@ -44,6 +44,73 @@
                     <a class="btn btn-default btn-file " id="download" title="表格下载"><span class="glyphicon glyphicon-cloud-download">&nbsp; </span><span class="hidden-xs">下载..</span></a>
                 </div>
             </div>
+            <form  class="form-horizontal" style="margin:20px; margin-bottom:0px; display:none; border-top:1px solid #eee" role="form" id="form0">
+              <!-- 选择分类 -->
+              <div class="row-fluid clearfix">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                      <label for="cat_id"   class="control-label">所属分类</label>
+                      <select class="form-control" name="cat_id" id="cat_id">
+                      <foreach name="cats" item="cat">
+                         <option value="<{$cat.cat_id}>" <if condition="$cat.cat_id eq $cat_id">selected</if>> <{$cat.name}> </option>
+                      </foreach>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name"  class="control-label">媒体名称</label>
+                        <input type="text" class="form-control" id="name"  name="name" placeholder="媒体名称">
+                    </div>
+                    <div class="form-group">
+                        <label for="news_url"   class="control-label">媒体链接</label>
+                        <input type="text"  class="form-control" id="news_url" name="news_url"  placeholder="媒体链接"  >
+                    </div>
+                </div>
+                <div class="col-sm-offset-1 col-sm-3">                
+                    <div class="form-group">
+                        <label for="case_url"   class="control-label">案例链接</label>
+                        <input type="text"  class="form-control" id="case_url" name="case_url"  placeholder="案例链接"  >
+                    </div>
+                    <div class="form-group">
+                      <label for="price"   class="control-label">价格</label>
+
+                        <input type="text" class="form-control" id="price" name="price" placeholder="价格" >
+
+                    </div>
+                    <div class="form-group">
+                      <label for="link_type"   class="control-label">链接说明</label>
+                      <select class="form-control" name="link_type" id="link_type">
+                        <option value="0"><{:C('link_type_text.0')}></option>
+                        <option value="1"><{:C('link_type_text.1')}></option>
+                        <option value="2"><{:C('link_type_text.2')}></option>
+                        <option value="3"><{:C('link_type_text.3')}></option>
+                      </select>
+                    </div>
+                </div>    
+                <div class="col-sm-offset-1 col-sm-3">             
+                    <div class="form-group">
+                      <label for="sl_type"   class="control-label">收录说明</label>
+                      <select class="form-control" name="sl_type" id="sl_type">
+                        <option value="0"><{:C('sl_type_text.0')}></option>
+                        <option value="1"><{:C('sl_type_text.1')}></option>
+                        <option value="2"><{:C('sl_type_text.2')}></option>
+                        <option value="3"><{:C('sl_type_text.3')}></option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="buy_link"   class="control-label">淘宝链接</label>
+                      <input type="text" class="form-control" id="buy_link" name="buy_link" placeholder="淘宝链接" >
+                  </div>    
+                    <div class="form-group">
+                        <label for="remark"   class="control-label">备注</label>
+                        <textarea class="form-control" name="remark" id="remark"></textarea>        
+                  </div>
+                </div>
+            </div>
+            <div class="row-fluid" style="margin-bottom:20px;">
+                <button type="submit" class="btn btn-primary center-block">提交</button>
+            </div>
+            </form>
         </div>
         <ul class="nav nav-tabs">
             <li class="active"><a href="#">默认排序</a></li>
@@ -127,18 +194,20 @@
 
     var flag = 1;
     $(function() {
-        function(){$("#fileIpt").fileinput();
+        // $('#add').on('click', function() {
+        //     layer.open({
+        //         type: 2,
+        //         title: '新增',
+        //         closeBtn: 1,
+        //         shadeClose: true,
+        //         skin: 'yourclass',
+        //         area: ['80%', '60%'],
+        //         offset: '100px',
+        //         content: "<{:U('Admin/News/addNews',array('cat_id'=>$cat_id))}>"
+        //     });
+        // });
         $('#add').on('click', function() {
-            layer.open({
-                type: 2,
-                title: '新增',
-                closeBtn: 1,
-                shadeClose: true,
-                skin: 'yourclass',
-                area: ['80%', '60%'],
-                offset: '100px',
-                content: "<{:U('Admin/News/addNews',array('cat_id'=>$cat_id))}>"
-            });
+            $('#form0').slideToggle();
         });
 
         $('#delAll').on('click', function() {
@@ -188,7 +257,25 @@
                 flag = 1;
             }
         });
+
+        //ajax添加内容
+        $('#add0').submit(function(){
+          $formdata = $(this).serialize();
+          $.post("<{:U('Admin/News/add')}>", $formdata,
+          function(st){
+            //新增成功,刷新父页面，关闭当前页
+            if(parseInt(st) == 1) {
+              // parent.location.reload();
+              parent.location.reload();
+            }
+          });
+
+      });
     })
+     </script>
+
+
+
     </script>
 </body>
 
