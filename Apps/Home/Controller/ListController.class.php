@@ -15,8 +15,16 @@ class ListController extends CommonController {
 			$condition['price'] = array(array('gt',$sp),array('lt',$ep));
 		} else if(isset($_GET['startPrice']) && !isset($_GET['endPrice'])) {
 	        $sp = I('startPrice');
-        	$ep = I('endPrice');
 			$condition['price'] = array(array('gt',$sp));
+		}
+		//粉丝数量筛选条件
+		if(isset($_GET['startNum']) && isset($_GET['endNum'])) {
+	        $sn = I('startNum');
+        	$en = I('endNum');
+			$condition['fans_num'] = array(array('gt',$sn),array('lt',$en));
+		} else if(isset($_GET['startNum']) && !isset($_GET['endNum'])) {
+	        $sn = I('startNum');
+			$condition['fans_num'] = array(array('gt',$sn));
 		}
 
         //右侧显示，不限
@@ -33,7 +41,7 @@ class ListController extends CommonController {
 				$cats = M('Category')->where($map)->select();
             	$condition['cat_id'] = array(in,$cats_id);
             }
-        } else {
+        } else if(!islel1($cat_id)) {
 			//新增，下拉分类
 			//获取可选分类
 			$map['pid'] = M('Category')->where('cat_id ='.$cat_id)->getField('pid');
@@ -56,6 +64,7 @@ class ListController extends CommonController {
                 $model = D('wb'); // 实例化wb对象
                 break;                
             case 3:
+               $model = D('wx'); // 实例化wb对象
                 break;
             case 4:
                 $model = D('tb'); // 实例化tb对象
@@ -70,8 +79,7 @@ class ListController extends CommonController {
 		$count      = $model->where($condition)->count();// 查询满足要求的总记录数
 		$Page       = new \Think\Page($count,$numPerPage);// 实例化分页类 传入总记录数和每页显示的记录数
 		$show       = $Page->show();// 分页显示输出
-	
-
+		
 		//模板赋值
 		$this->assign('cat_id',$cat_id);  //所属分类
 		$this->assign('page',$show);// 赋值分页输出

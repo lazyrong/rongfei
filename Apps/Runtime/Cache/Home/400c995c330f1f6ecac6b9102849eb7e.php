@@ -90,7 +90,7 @@
     </div>
     <!-- right-iframe-content -->
     <div class=" col-md-8 col-lg-9 media-content" id="iframe-body">
-      <iframe id="iframe0" src="<?php echo U('Home/List/index',array('type' => $type));?>" name="iframe0" width="100%" height="100%" scrolling="no" frameborder="0"  seamless></iframe>
+      <iframe id="iframe0" src="<?php echo U('Home/List/index',array('cat_id' => $cat_id));?>" name="iframe0" width="100%" height="100%" scrolling="no" frameborder="0"  seamless></iframe>
     </div>
   </div>
   <!-- footer -->

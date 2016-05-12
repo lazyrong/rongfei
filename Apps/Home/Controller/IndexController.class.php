@@ -14,7 +14,7 @@ class IndexController extends CommonController {
         //获取二级目录树
         $catsList = list2layer($cats,$cat_id);
         
-
+        
         $type = $model->where('cat_id ='.$cat_id)->getField('type');//list 模板type
         
         $this->assign('type',$type); //list 当前模板type
