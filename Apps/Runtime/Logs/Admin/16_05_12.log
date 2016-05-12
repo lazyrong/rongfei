@@ -6711,3 +6711,3122 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+[ 2016-05-12T23:17:53+08:00 ] ::1 /rongfei/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:17:53+08:00 ] ::1 /rongfei/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:17:54+08:00 ] ::1 /rongfei/Admin/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:17:54+08:00 ] ::1 /rongfei/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:17:54+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('49')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:17:56+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =49 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:18:06+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:18:06+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: cats F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:18:07+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =42 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:18:07+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 42  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 42  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =42 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('43')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =42 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_wb` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_wb` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='44' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_wb` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant wb_id - assumed 'wb_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\51946789a364d0c4a5e3e73878fc5bae.php 第 163 行.
+NOTIC: [8] Use of undefined constant wb_id - assumed 'wb_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\51946789a364d0c4a5e3e73878fc5bae.php 第 163 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:18:08+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:18:08+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: cats F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:19:20+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:19:20+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: cats F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:19:22+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','123') [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:19:22+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:19:22+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('51')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:19:24+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','12323') [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:19:24+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:19:24+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('51','52')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:19:26+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =52 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:27:42+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:27:42+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0040s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('51')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:27:46+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','12323') [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:27:46+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:27:46+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0030s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('51','53')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:27:48+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =53 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:27:50+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:27:50+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('51')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:27:59+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','123') [ RunTime:0.0010s ]
+
+[ 2016-05-12T23:27:59+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:27:59+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('51','54')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:28:02+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =54 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:28:05+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:28:05+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('51')  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:28:07+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','12321') [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:28:07+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:28:07+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('51','55')  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:29:54+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:29:54+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('51','55')  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:29:56+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0000s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =51 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:30:24+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:30:24+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('55')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:30:27+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','55','1','123213') [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:30:27+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:30:27+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('55')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:30:28+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =56 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:30:59+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:30:59+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('55')  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:31:02+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','123213') [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:31:02+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:31:02+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('57','55')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:31:05+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0000s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =55 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:31:25+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:31:25+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('57')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:31:27+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','123') [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:31:27+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:31:27+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('57','58')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:31:30+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','58','1','123') [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:31:30+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:31:30+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('57','58')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:31:32+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =59 ) [ RunTime:0.0060s ]
+
+[ 2016-05-12T23:31:38+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0000s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =58 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:32:15+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:32:15+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('57')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:32:17+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','123') [ RunTime:0.0010s ]
+
+[ 2016-05-12T23:32:17+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:32:17+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('57','60')  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:32:24+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0000s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =60 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:32:43+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:32:43+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('57')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:32:45+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =57 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:32:54+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:32:55+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: cats F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:32:56+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','123') [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:32:56+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:32:57+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('61')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:33:58+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:33:58+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('61')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:34:01+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','123123') [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:34:01+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:34:01+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('61','62')  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:34:02+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','123123') [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:34:02+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:34:02+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('61','62','63')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:34:05+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =63 ) [ RunTime:0.0010s ]
+
+[ 2016-05-12T23:34:09+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:34:09+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('61','62')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:34:55+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-12T23:34:55+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('61','62')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:34:57+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0000s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =62 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:35:51+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:35:51+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('61')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:35:54+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =61 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:35:56+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:35:56+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0040s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: cats F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:38:15+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:38:15+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: cats F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:38:17+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','123123') [ RunTime:0.0010s ]
+
+[ 2016-05-12T23:38:17+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:38:17+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('64')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:38:19+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','12321') [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:38:19+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:38:19+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('64','65')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:39:01+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:39:01+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('64','65')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:39:04+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =65 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:39:06+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =65 ) [ RunTime:0.0010s ]
+
+[ 2016-05-12T23:39:07+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0000s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =65 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:39:23+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:39:23+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('64')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:39:25+08:00 ] ::1 /rongfei/Admin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\workplace\rongfei\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lazy_category` (`type`,`pid`,`sort`,`name`) VALUES ('1','1','100','12312') [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:39:25+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:39:25+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('64','66')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:39:28+08:00 ] ::1 /rongfei/Admin/Category/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: DELETE FROM `lazy_category` WHERE ( cat_id =66 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:42:21+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:42:21+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('64')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:42:25+08:00 ] ::1 /rongfei/Admin/News/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0000s ]
+SQL: DELETE FROM `lazy_news` WHERE ( news_id =74 ) [ RunTime:0.0000s ]
+
+[ 2016-05-12T23:42:25+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('64')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:42:45+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:42:45+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('64')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_news` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_news` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='50' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_news` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant news_id - assumed 'news_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\d83b80fb61b6619d8ebccd0d063e225c.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:42:45+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =42 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:42:46+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 42  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 42  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =42 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('43')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =42 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_wb` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_wb` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='44' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_wb` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant wb_id - assumed 'wb_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\51946789a364d0c4a5e3e73878fc5bae.php 第 163 行.
+NOTIC: [8] Use of undefined constant wb_id - assumed 'wb_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\51946789a364d0c4a5e3e73878fc5bae.php 第 163 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:42:46+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/45.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =45 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-12T23:42:46+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/45.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 45  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 45  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =45 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('46')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =45 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_wx` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_wx` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='47' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_wx` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant wx_id - assumed 'wx_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\e4a1acff7a400e4912af54649d2d4632.php 第 165 行.
+NOTIC: [8] Use of undefined constant wx_id - assumed 'wx_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\e4a1acff7a400e4912af54649d2d4632.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-12T23:42:47+08:00 ] ::1 /rongfei/Admin/Index/index/cat_id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lazy_category` ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lazy_category` WHERE ( pid = 0 )  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =42 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-12T23:42:47+08:00 ] ::1 /rongfei/Admin/List/index/cat_id/42.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0010s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 42  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id` FROM `lazy_category` WHERE `pid` = 42  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `lazy_category` WHERE ( cat_id =42 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant in - assumed 'in' F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 37 行.
+SQL: SELECT * FROM `lazy_category` WHERE `pid` IN ('43')  [ RunTime:0.0000s ]
+SQL: SELECT `type` FROM `lazy_category` WHERE ( cat_id =42 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lazy_wb` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 78 行.
+SQL: SELECT * FROM `lazy_wb` ORDER BY pubtime desc LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lazy_category` [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `lazy_category` WHERE ( 1=1 AND cat_id='44' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: condition F:\workplace\rongfei\Apps\Admin\Controller\ListController.class.php 第 79 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lazy_wb` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant wb_id - assumed 'wb_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\51946789a364d0c4a5e3e73878fc5bae.php 第 163 行.
+NOTIC: [8] Use of undefined constant wb_id - assumed 'wb_id' F:\workplace\rongfei\Apps\Runtime\Cache\Admin\51946789a364d0c4a5e3e73878fc5bae.php 第 163 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

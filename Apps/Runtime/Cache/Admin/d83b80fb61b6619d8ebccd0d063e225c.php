@@ -191,8 +191,10 @@
     <script>
     //删除对应行数据
     function delNews(id) {
+        var index0 = layer.confirm('确定要删除吗？', {
+                btn: ['删除', '取消'] //按钮
+            }, function() {
             $.post('<?php echo U('Admin/News/del');?>', {'news_id':id},
-                
                 function(st){
                     if (st) {
                             layer.msg('删除成功!',{time:500},function(){
@@ -203,6 +205,7 @@
                             location.reload();
                         }
                 });
+            });
         }
 
     var flag = 1;

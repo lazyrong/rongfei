@@ -156,6 +156,7 @@
 
     <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
     <script src="/rongfei/Public/js/jquery-1.9.1.min.js"></script>
+    <script src="/rongfei/Public/layer/layer.js"></script>
     <script src="/rongfei/Public/js/bootstrap.min.js"></script>
     <script>
     $(function(){
@@ -198,16 +199,20 @@
     //ajax修改分类名称
           function del(obj,id) {
             $obj = $(obj);
-            $pt = $obj.parent('.tags-div')? $obj.parent('.tags-div'):$obj.parent('li');
+            $pt = $obj.parent('.tags-div').length>0? $obj.parent('.tags-div'):$obj.parent().parent();
 
-            $.post("<?php echo U('Admin/Category/del');?>",{'cat_id':id},
-              function(st){
-                if(st) {
-                  $pt.remove();
-                }
-              }
-            );
-
+            var index = layer.confirm('删除该栏目分类？', {
+                btn: ['删除', '取消'] //按钮
+            }, function() {
+                  $.post("<?php echo U('Admin/Category/del');?>",{'cat_id':id},
+                  function(st){
+                    if(st) {
+                      layer.close(index);
+                      $pt.remove();
+                    }
+                  }
+                );
+            });
           }
 
     </script>
