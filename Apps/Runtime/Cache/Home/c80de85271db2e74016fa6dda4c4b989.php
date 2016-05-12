@@ -30,9 +30,9 @@
         </div>
         <div class="panel panel-default">
             <div class="panel-body filter-box">
-                <strong>价格筛选：</strong> <a href="xwrw.html">不限</a> <a href="">0-20元</a>
-                <a href="">20-50元</a> <a href="">50-100元</a> <a href="">100-200元</a>
-                <a href="">200以上</a>
+                <strong>价格筛选：</strong> <a href="<?php echo U('Home/List/index',array('cat_id'=>$cat_id));?>" >不限</a> <a href="<?php echo U('Home/List/index',array('cat_id'=>$cat_id, 'startPrice'=>0,'endPrice'=>20 ));?>">0-20元</a>
+                <a href="<?php echo U('Home/List/index',array('cat_id'=>$cat_id, 'startPrice'=>20,'endPrice'=>50 ));?>">20-50元</a> <a href="<?php echo U('Home/List/index',array('cat_id'=>$cat_id, 'startPrice'=>50,'endPrice'=>100 ));?>">50-100元</a> <a href="<?php echo U('Home/List/index',array('cat_id'=>$cat_id, 'startPrice'=>100,'endPrice'=>200 ));?>">100-200元</a>
+                <a href="<?php echo U('Home/List/index',array('cat_id'=>$cat_id, 'startPrice'=>200));?>">200以上</a>
             </div>
         </div>
 

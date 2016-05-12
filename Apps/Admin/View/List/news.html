@@ -31,9 +31,9 @@
         </div>
         <div class="panel panel-default">
             <div class="panel-body filter-box">
-                <strong>价格筛选：</strong> <a href="xwrw.html">不限</a> <a href="">0-20元</a>
-                <a href="">20-50元</a> <a href="">50-100元</a> <a href="">100-200元</a>
-                <a href="">200以上</a>
+                <strong>价格筛选：</strong> <a href="<{:U('Admin/List/index',array('cat_id'=>$cat_id))}>" >不限</a> <a href="<{:U('Admin/List/index',array('cat_id'=>$cat_id, 'startPrice'=>0,'endPrice'=>20 ))}>">0-20元</a>
+                <a href="<{:U('Admin/List/index',array('cat_id'=>$cat_id, 'startPrice'=>20,'endPrice'=>50 ))}>">20-50元</a> <a href="<{:U('Admin/List/index',array('cat_id'=>$cat_id, 'startPrice'=>50,'endPrice'=>100 ))}>">50-100元</a> <a href="<{:U('Admin/List/index',array('cat_id'=>$cat_id, 'startPrice'=>100,'endPrice'=>200 ))}>">100-200元</a>
+                <a href="<{:U('Admin/List/index',array('cat_id'=>$cat_id, 'startPrice'=>200))}>">200以上</a>
             </div>
         </div>
         <div class="panel panel-default">
@@ -165,7 +165,7 @@
                             <td>
                                 <{$res.pubtime}>
                             </td>
-                            <td><a href="<{:U('Admin/News/editNews',array('news_id'=>$res[news_id],'cat_id'=>$cat_id))}>" title="编辑"><span class="glyphicon glyphicon-edit"></span></a>&nbsp;&nbsp;<a href="<{:U('Admin/News/del',array('news_id'=>$res[news_id]))}>" title="删除"><span class="glyphicon glyphicon-trash"></span></a></td>
+                            <td><a href="<{:U('Admin/News/editNews',array('news_id'=>$res[news_id],'cat_id'=>$cat_id))}>" title="编辑"><span class="glyphicon glyphicon-edit"></span></a>&nbsp;&nbsp;<a href="javascript:delNews(<{$res['news_id']}>)" title="删除"><span class="glyphicon glyphicon-trash"></span></a></td>
                         </tr>
                     </foreach>
                 </tbody>
@@ -193,12 +193,29 @@
     <script src="__JS__/bootstrap.min.js"></script>
     <script src="__JS__/fileinput.min.js"></script>
     <script>
+    //删除对应行数据
+    function delNews(id) {
+            $.post('<{:U('Admin/News/del')}>', {'news_id':id},
+                
+                function(st){
+                    if (st) {
+                            layer.msg('删除成功!',{time:500},function(){
+                                location.reload();
+                            });
+                        } else {
+                            layer.msg('删除失败!');
+                            location.reload();
+                        }
+                });
+        }
 
     var flag = 1;
     $(function() {
+
         $('#add,#cancel0').on('click', function() {
             $('#add-panel').slideToggle();
         });
+
 
         $('#delAll').on('click', function() {
             //询问框
@@ -221,8 +238,9 @@
                     function(st) {
                         layer.close(index);
                         if (st) {
-                            layer.msg('删除成功!');
-                            location.reload();
+                            layer.msg('删除成功!',{time:500},function(){
+                                location.reload();
+                            });
                         } else {
                             layer.msg('删除失败!');
                         }
@@ -230,6 +248,8 @@
                     });
             });
         });
+
+        //全选
         $("#checkAll").on('change', function() {
             var arrChk = $("input[name='ids[]']");
             if (flag) {
@@ -255,7 +275,9 @@
                 // layer.msg('新增成功!');
                 // //清空表单
                 // $(':input','#form0').not(':button, :submit, :reset, :hidden').val('').removeAttr('checked').removeAttr('selected');
-                location.reload();
+                layer.msg('新增成功!',{time:500},function(){
+                    location.reload();
+                });
             } else {
                 layer.msg('新增失败!');
             }

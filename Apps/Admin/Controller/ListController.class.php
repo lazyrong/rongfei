@@ -7,8 +7,19 @@ class ListController extends CommonController {
     	
         //查询条件
         $cat_id = I('cat_id',1);
+		
+		//价格筛选条件
+		if(isset($_GET['startPrice']) && isset($_GET['endPrice'])) {
+	        $sp = I('startPrice');
+        	$ep = I('endPrice');
+			$condition['price'] = array(array('gt',$sp),array('lt',$ep));
+		} else if(isset($_GET['startPrice']) && !isset($_GET['endPrice'])) {
+	        $sp = I('startPrice');
+        	$ep = I('endPrice');
+			$condition['price'] = array(array('gt',$sp));
+		}
 
-        //右侧显示，不限、单个
+        //右侧显示，不限
         if(getChildrenId($cat_id)) {
             $cats_id = getChildrenId($cat_id);
 			// //新增，下拉分类
@@ -34,7 +45,7 @@ class ListController extends CommonController {
 		$type = I('type',$type);
 		$order = 'pubtime';
 		$sort = 'desc';
-		$numPerPage = 15;
+		$numPerPage = 2;
 		$p = I('p',1);		
 		$model = null;
         switch ($type) {
@@ -53,22 +64,14 @@ class ListController extends CommonController {
                 $this->error('你在说什么，我听不懂！');
         }
         
-		if(islel1($cat_id)) {
-			// 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
-			$resultList = $model->relation(true)->page($p.','.$numPerPage)->order($order.' '.$sort)->select();
-			$count      = $model->count();// 查询满足要求的总记录数
-			$Page       = new \Think\Page($count,$numPerPage);// 实例化分页类 传入总记录数和每页显示的记录数
 
-			$show       = $Page->show();// 分页显示输出
-		} else {
-			// 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
-			$resultList = $model->relation(true)->where($condition)->page($p.','.$numPerPage)->order($order.' '.$sort)->select();
-			$count      = $model->where($condition)->count();// 查询满足要求的总记录数
-			$Page       = new \Think\Page($count,$numPerPage);// 实例化分页类 传入总记录数和每页显示的记录数
-
-			$show       = $Page->show();// 分页显示输出
-		}
+		// 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
+		$resultList = $model->relation(true)->where($condition)->page($p.','.$numPerPage)->order($order.' '.$sort)->select();
+		$count      = $model->where($condition)->count();// 查询满足要求的总记录数
+		$Page       = new \Think\Page($count,$numPerPage);// 实例化分页类 传入总记录数和每页显示的记录数
+		$show       = $Page->show();// 分页显示输出
 	
+
 		//模板赋值
 		$this->assign('cat_id',$cat_id);  //所属分类
 		$this->assign('page',$show);// 赋值分页输出

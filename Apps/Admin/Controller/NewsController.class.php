@@ -24,6 +24,7 @@ class NewsController extends CommonController{
 	     $this->ajaxreturn($st);
 	   }
 	}
+
 	
 	public function addNews(){
 		$cat_id = I('cat_id');
@@ -71,8 +72,13 @@ class NewsController extends CommonController{
 		$news_id = I('news_id');
 		$model= M('News');
 		$pk = $model->getpk();
-		$model->where($pk.' ='.$news_id)->delete();
-		$this->success('删除成功');
+		if($model->where($pk.' ='.$news_id)->delete()) {
+		     $st = 1;
+		     $this->ajaxreturn($st);
+		 } else {
+	     	 $st = 0;
+		     $this->ajaxreturn($st);
+		 }
 	}
 	
 	public function delAll(){

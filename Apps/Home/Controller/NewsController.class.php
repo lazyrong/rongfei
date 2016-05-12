@@ -3,7 +3,7 @@
  * 新闻软文管理
  * @author lazytech.cc
  */
-namespace Admin\Controller;
+namespace Home\Controller;
 use Think\Controller;
 
 class NewsController extends CommonController{
@@ -24,19 +24,12 @@ class NewsController extends CommonController{
 	     $this->ajaxreturn($st);
 	   }
 	}
+
 	
 	public function addNews(){
 		$cat_id = I('cat_id');
 		$this->assign('cat_id',$cat_id);  //当前所属分类
         
-		
-		//获取可选分类
-        $condition['pid'] = array(in,getChildrenId(1));
-
-		//下拉分类
-		$cats = M('Category')->where($condition)->select();
-		$this->assign('cats',$cats);
-		
 		$this->display('addNews');		
 	}
 
@@ -79,8 +72,13 @@ class NewsController extends CommonController{
 		$news_id = I('news_id');
 		$model= M('News');
 		$pk = $model->getpk();
-		$model->where($pk.' ='.$news_id)->delete();
-		$this->success('删除成功');
+		if($model->where($pk.' ='.$news_id)->delete()) {
+		     $st = 1;
+		     $this->ajaxreturn($st);
+		 } else {
+	     	 $st = 0;
+		     $this->ajaxreturn($st);
+		 }
 	}
 	
 	public function delAll(){
